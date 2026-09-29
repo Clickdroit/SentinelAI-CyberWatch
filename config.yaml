@@ -1,0 +1,9 @@
+# SentinelAI-CyberWatch Configuration
+discord_webhook_url: ""
+min_cvss_score: 7.0
+poll_interval_minutes: 30
+ollama_endpoint: "http://localhost:11434"
+ollama_model: "mistral"
+feeds:
+  cert_fr_alerts: "https://www.cert.ssi.gouv.fr/alerte/feed/"
+  cert_fr_avis: "https://www.cert.ssi.gouv.fr/avis/feed/"
