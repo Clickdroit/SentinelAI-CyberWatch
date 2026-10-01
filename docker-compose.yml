@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  sentinel:
+    build: .
+    container_name: sentinel-cyberwatch
+    restart: unless-stopped
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
